@@ -116,6 +116,7 @@ class RRT
     }
     }
     curr.previous=min;
+    curr.weight=min.weight+PVector.dist(curr.pose,min.pose);
   }
   boolean colliding(vertx v)
   {
